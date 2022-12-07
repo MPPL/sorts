@@ -9,7 +9,7 @@ void merge(int array[], int start, int mid, int end){
     int left = start;
     int right = mid+1;
     int i = start;
-    int arr[N];
+    new int arr[end-start+1];
     while((left<= mid)&&(right <= end)){
         if(array[left]<array[right]){
             arr[i] = array[left];
