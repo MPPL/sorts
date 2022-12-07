@@ -2,14 +2,14 @@
 #include <stdio.h>
 #include <time.h>
 
-#define N 50
+#define N 5000
 
 void merge(int array[], int start, int mid, int end){
 
     int left = start;
     int right = mid+1;
     int i = start;
-    new int arr[end-start+1];
+    int arr[N];
     while((left<= mid)&&(right <= end)){
         if(array[left]<array[right]){
             arr[i] = array[left];
